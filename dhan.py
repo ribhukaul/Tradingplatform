@@ -1,0 +1,9 @@
+from dhanhq import dhanhq
+
+access_token = ("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkaGFuIiwicGFydG5lcklkIjoiIiwiZXhwIjoxNjk5NTQ3MzIyLCJ0b2tlbkNvbnN1bWVyVHlwZSI6IlNFTEYiLCJ3ZWJob29rVXJsIjoiIiwiZGhhbkNsaWVudElkIjoiMTEwMDY3ODUzNCJ9.A079FtuGGqgPUhf3muUP9VFKfX1YwGM2b63wQZpvJyvw2f0o1jWZTQKzSBY6LiaM94L-nNEI1OSbdZFHgJGOcA")
+
+client_id = "1100678534"
+
+dhan = dhanhq(client_id, access_token)
+f = dhan.get_fund_limits()
+print(f)
